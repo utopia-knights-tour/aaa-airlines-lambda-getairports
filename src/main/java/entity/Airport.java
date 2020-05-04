@@ -1,31 +1,31 @@
 package entity;
 
 public class Airport {
-	private String code;
-	private String name;
-	private String location;
+	private String airportCode;
+	private String airportName;
+	private String airportLocation;
 
-	public String getCode() {
-		return code;
+	public String getAirportCode() {
+		return airportCode;
 	}
 
-	public void setCode(String code) {
-		this.code = code;
+	public void setAirportCode(String airportCode) {
+		this.airportCode = airportCode;
 	}
 
-	public String getName() {
-		return name;
+	public String getAirportName() {
+		return airportName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setAirportName(String airportName) {
+		this.airportName = airportName;
 	}
 
-	public String getLocation() {
-		return location;
+	public String getAirportLocation() {
+		return airportLocation;
 	}
 
-	public void setLocation(String location) {
-		this.location = location;
+	public void setAirportLocation(String airportLocation) {
+		this.airportLocation = airportLocation;
 	}
 }
