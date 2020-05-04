@@ -23,9 +23,9 @@ public class AirportDao {
 		ResultSet rs = pstmt.executeQuery();
 		while (rs.next()) {
 			Airport airport = new Airport();
-			airport.setCode(rs.getString("airportCode"));
-			airport.setName(rs.getString("airportName"));
-			airport.setLocation(rs.getString("airportLocation"));
+			airport.setAirportCode(rs.getString("airportCode"));
+			airport.setAirportName(rs.getString("airportName"));
+			airport.setAirportLocation(rs.getString("airportLocation"));
 			airports.add(airport);
 		}
 		return airports;
