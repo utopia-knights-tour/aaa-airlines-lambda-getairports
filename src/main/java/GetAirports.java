@@ -22,7 +22,6 @@ public class GetAirports implements RequestHandler<ApiGatewayRequest, ApiGateway
 		LambdaLogger logger = context.getLogger();
 		Map<String, String> headers = new HashMap<String, String>();
 		headers.put("Access-Control-Allow-Origin", "*");
-		headers.put("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
 		try {
 			List<Airport> airports = agentService.getAirports();
 			return new ApiGatewayProxyResponse(200, headers, new Gson().toJson(airports));
